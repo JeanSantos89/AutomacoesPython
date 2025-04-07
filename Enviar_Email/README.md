@@ -1,0 +1,1 @@
+Este pequeno projeto apresenta um código simples utilizando o Selenium, com o objetivo de enviar e-mails (assunto, conteúdo e anexos de imagem).

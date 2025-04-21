@@ -9,5 +9,5 @@ import time
 
 # Solicita a palavra chave de pesquisa, por exemplo: Sicredi, amazon, etc
 empresa = input("Qual empresa deseja filtrar? " )
-cidade = input("Qual cidade deseja filtrar?\n Exemplo: Cidade, Estado\n")
+cidade = input(" Qual cidade deseja filtrar?\n Exemplo: Cidade, Estado\n")
 filter_search(empresa, cidade)

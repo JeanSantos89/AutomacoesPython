@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 # Solicita a palavra chave de pesquisa, por exemplo: Sicredi, amazon, etc
@@ -45,4 +46,21 @@ sugestao.click()
 time.sleep(5)
 # Aplicar filtro
 driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[2]/section/div/nav/div/ul/li[5]/div/div/div/div[1]/div/form/fieldset/div[2]/button[2]').click()
+time.sleep(5)
+
+# Filtro Empresa Atual
+driver.find_element(By.CSS_SELECTOR, "#searchFilter_currentCompany").click()
+time.sleep(2)
+
+x = 1000 
+y = 190
+
+# Move o cursor para a coordenada e clica
+actions = ActionChains(driver)
+actions.move_by_offset(x, y).click().perform()
+
+# (Importante) volta o cursor para a origem, senão próximos cliques somam o offset
+actions.move_by_offset(-x, -y).perform()
+time.sleep(5)
+driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[2]/section/div/nav/div/ul/li[6]/div/div/div/div[1]/div/form/fieldset/div[2]/button[2]/span').click()
 time.sleep(5)

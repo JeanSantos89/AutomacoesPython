@@ -14,8 +14,8 @@ browser = webdriver.Chrome() # Abrir navegador
 browser.get("https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXH0vVvGfVZJvZtyzBH1Ucoo2GgdCq_mA1QcGKNzQF7qfG2vUssGzY-nTK0ffcoHV_EAuhSQYNzyjQ&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1575003196%3A1744056841861385")
 browser.maximize_window() 
 
-login = "jeansaantos89@gmail.com"
-senha = "Saantos1999!"
+login = "#"
+senha = "#"
 
 
 ## LOGIN
